@@ -113,7 +113,3 @@ Quick edits in `agent.py`:
   - Verify `GEMINI_API_KEY` in `.env` and restart Streamlit
 - **GitHub auth/rate issues**
   - Check `GITHUB_TOKEN` validity and permissions
-
-## 8) Security tip
-
-Do not expose real keys publicly. If you publish the repo, replace `.env` values with placeholders first.
