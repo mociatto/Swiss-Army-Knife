@@ -1,4 +1,4 @@
-# Swiss Army Agent (Streamlit + Gemini)
+# Swiss Army Knife Agent
 
 A beginner-friendly research dashboard powered by Gemini.
 
