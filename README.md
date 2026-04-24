@@ -19,10 +19,36 @@ A beginner-friendly research dashboard powered by Gemini.
 
 ## 3) Setup (first run)
 
-### A. Install dependencies
+### A. Create venv + install dependencies
+
+**macOS / Linux**
 
 ```bash
-pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+**Windows (PowerShell)**
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+py -m pip install -r requirements.txt
+```
+
+**Windows (CMD)**
+
+```bat
+py -m venv .venv
+.\.venv\Scripts\activate.bat
+py -m pip install -r requirements.txt
+```
+
+If PowerShell blocks activation, run once in the same terminal:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
 ### B. Configure API keys
@@ -41,8 +67,16 @@ Notes:
 
 ## 4) Run the app
 
+**macOS / Linux**
+
 ```bash
-streamlit run agent.py
+python3 -m streamlit run agent.py
+```
+
+**Windows**
+
+```powershell
+py -m streamlit run agent.py
 ```
 
 Then open: `http://localhost:8501`
